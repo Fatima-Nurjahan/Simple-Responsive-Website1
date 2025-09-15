@@ -17,6 +17,10 @@
 .display-flex{
     display: flex;
 }
+.display-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 .btn-primary{
     background: rgba(224, 44, 109, 1);
     padding: 16px;
@@ -82,3 +86,22 @@ padding: 20px;
 /* Footer Section style */
 
 /* responsive Design style */
+
+@media screen and (max-width: 576px){
+    .popular-section,
+    .head-sub-container
+    {
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column-reverse;
+        padding: 0px;
+        margin: auto;
+        align-items: center;
+        justify-items: center;
+    }
+    .company{
+        gap: 50px;
+    }
+    .nav-container{
+        flex-direction: column;
+    }
+}
